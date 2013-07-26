@@ -23,7 +23,7 @@
   <li>
     <figure>
       <figcaption>
-        First things first: Let's all install Node and get a sample app running.
+        First things first: Let's install Node and get a sample app running.
       </figcaption>
     </figure>
   </li>
@@ -37,7 +37,7 @@
   <li>
     <figure>
       <figcaption class="fullscreen">
-        Unlike ruby, Node is easy to set up. You can download an installer from <a href="http://nodejs.org/">nodejs.org</a>, or use homebrew: <code>brew install node</code>, or use <a href="https://github.com/creationix/nvm">nvm</a> to manage multiple installations of Node.
+        Node is easy to set up. You can download an installer from <a href="http://nodejs.org/">nodejs.org</a>, or use homebrew: <code>brew install node</code>, or use <a href="https://github.com/creationix/nvm">nvm</a> to manage multiple installations of Node.
       </figcaption>
     </figure>
   </li>
@@ -50,8 +50,24 @@
 
   <li>
     <figure>
-      <figcaption>
+      <figcaption class="fullscreen">
         <code>git clone https://github.com/heroku/node-js-sample</code>
+      </figcaption>
+    </figure>
+  </li>
+
+  <li>
+    <figure>
+      <figcaption class="fullscreen">
+        <code>cd node-js-sample<br>npm install<br>foreman start</code>
+      </figcaption>
+    </figure>
+  </li>
+
+  <li>
+    <figure>
+      <figcaption class="fullscreen">
+        Open <a href="http://localhost:5000">localhost:5000</a> in your browser. Boom.
       </figcaption>
     </figure>
   </li>
@@ -61,29 +77,25 @@
   </li>
 
   <li>
-    <h1>What does npm stand for?</h1>
-  </li>
-
-  <li>
-    <figure>
-      <figcaption class="fullscreen">
-        Contrary to the belief of many, "npm" is not in fact an abbreviation for "Node Package Manager". It is a recursive bacronymic abbreviation for "npm is not an acronym". (If it was "ninaa", then it would be an acronym, and thus incorrectly named.)
-      </figcaption>
-    </figure>
-  </li>
-
-  <li>
-    <figure>
-      <figcaption class="fullscreen">
-        But seriously...
-      </figcaption>
-    </figure>
-  </li>
-
-  <li>
     <figure>
       <figcaption class="fullscreen">
         npm is the Node.js package manager. It's what bundler is to ruby.
+      </figcaption>
+    </figure>
+  </li>
+
+  <li>
+    <figure>
+      <figcaption class="fullscreen">
+        <code>package.json</code> is where npm dependencies are defined. Every Node app has a <code>package.json</code>, as does every npm module.
+      </figcaption>
+    </figure>
+  </li>
+
+  <li>
+    <figure>
+      <figcaption class="fullscreen">
+        <a href="http://npmjs.org">npmjs.org</a> is the registry where all the modules are. Think rubygems.org
       </figcaption>
     </figure>
   </li>
@@ -99,11 +111,68 @@
   <li>
     <figure>
       <figcaption class="fullscreen">
-        <a href="http://npmjs.org">npmjs.org</a> is the registry where all the modules are.
+        <code>npm install colors</code> fetches the colors module from npmjsq.org and sticks it in the current path's <code>./node_modules</code> directory.
       </figcaption>
     </figure>
   </li>
 
+  <li>
+    <figure>
+      <figcaption class="fullscreen">
+        <code>npm install express --save</code>
+        installs a module locally and adds it to package.json dependencies
+      </figcaption>
+    </figure>
+  </li>
+
+  <li>
+    <figure>
+      <figcaption class="fullscreen">
+        <code>npm install -g grunt-cli</code> installs grunt as a global module, making it available as an executable on your PATH.
+      </figcaption>
+    </figure>
+  </li>
+
+  <li>
+    <figure>
+      <figcaption class="fullscreen">
+        Unless explicitly advised to do so, don't install anything globally.
+      </figcaption>
+    </figure>
+  </li>
+
+  <li>
+    <figure>
+      <figcaption class="fullscreen">
+        <code>npm prune</code>
+        removes any lingering modules that are no longer listed in <code>package.json</code>
+      </figcaption>
+    </figure>
+  </li>
+
+  <li>
+    <figure>
+      <figcaption class="fullscreen">
+        <code>npm info express</code> gives you a JSON dump about the express module.
+      </figcaption>
+    </figure>
+  </li>
+
+  <li>
+    <figure>
+      <figcaption class="fullscreen">
+        <code>npm info npm version</code> will tell you the latest version of npm
+      </figcaption>
+    </figure>
+  </li>
+
+  <li>
+    <figure>
+      <figcaption class="fullscreen">
+        <code>npm info npm version</code>
+      </figcaption>
+    </figure>
+  </li>
 
   <li>
     <figure>
