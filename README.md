@@ -1,8 +1,8 @@
-# Buildpack Adventure
+# Node School
 
 A story about the Heroku Node.js Buildpack, presented at [GothamJS 2013](http://gothamjs.com/).
 
-[buildpack-adventure.herokuapp.com](http://buildpack-adventure.herokuapp.com)
+[node-school.herokuapp.com](http://node-school.herokuapp.com)
 
 ## Usage
 
